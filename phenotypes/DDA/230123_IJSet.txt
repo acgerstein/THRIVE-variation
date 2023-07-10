@@ -1,0 +1,20 @@
+Process -> batch -> macro
+Input ... 
+
+makeRectangle(1878, 1344, 2304, 2430);
+run("Crop");
+run("Invert");
+run("8-bit");
+setMinAndMax(100, 130);
+run("Apply LUT");
+run("Subtract Background...", "rolling=80");
+
+makeRectangle(2100, 1272, 1590, 1644);
+run("Crop");
+run("Invert");
+run("8-bit");
+setMinAndMax(0, 190);
+run("Apply LUT");
+run("Subtract Background...", "rolling=80");
+
+687+32.5
